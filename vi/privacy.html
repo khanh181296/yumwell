@@ -27,6 +27,16 @@ h1{font-size:30px;line-height:1.25}h2{font-size:21px;margin-top:28px}nav a{margi
 </ul>
 <h2>Gợi ý theo thời tiết (tuỳ chọn, mặc định tắt)</h2>
 <p>Nếu bật <strong>Gợi ý theo thời tiết</strong>, ứng dụng xin vị trí <strong>gần đúng</strong>. Toạ độ được làm tròn khoảng 10 km ngay trên máy và chỉ gửi tới MET Norway (https://api.met.no, Viện Khí tượng Na Uy) để lấy nhiệt độ hiện tại. Chúng tôi không lưu vị trí của bạn.</p>
+<h2>Thống kê, báo lỗi và thông báo đẩy (Google Firebase)</h2>
+<p>Để biết tính năng nào được dùng và sửa lỗi, ứng dụng dùng Google Firebase:</p>
+<ul>
+<li><strong>Firebase Analytics</strong> ghi lại sự kiện sử dụng (ví dụ màn hình được mở, một lần quay, một món được xem) kèm mã cài đặt ứng dụng, dòng máy, phiên bản hệ điều hành, ngôn ngữ và quốc gia gần đúng. Không ghi tên, email, số đo cơ thể hay món ăn của bạn.</li>
+<li><strong>Firebase Crashlytics</strong> gửi báo cáo khi ứng dụng bị lỗi hoặc văng: dòng máy, phiên bản hệ điều hành, phiên bản ứng dụng và thông tin lỗi kỹ thuật.</li>
+<li><strong>Firebase Cloud Messaging</strong> cấp cho máy một mã nhận thông báo để chúng tôi thỉnh thoảng gửi tin (ví dụ món mới). Bạn có thể tắt thông báo trong cài đặt điện thoại bất cứ lúc nào.</li>
+</ul>
+<p>Google xử lý dữ liệu này thay mặt chúng tôi theo điều khoản: https://firebase.google.com/support/privacy</p>
+<h2>Ảnh món ăn</h2>
+<p>Ảnh món không nằm sẵn trong ứng dụng. Khi bạn xem một món, ứng dụng tải ảnh từ trang web của chúng tôi (khanh181296.github.io, do GitHub Pages lưu trữ) và giữ một bản trên máy. Như mọi trang web, GitHub nhận địa chỉ IP của bạn để gửi ảnh. Không có tài khoản, hồ sơ hay dữ liệu cá nhân nào được gửi đi.</p>
 <h2>Thông báo (tuỳ chọn)</h2>
 <p>Lời nhắc giờ ăn được hẹn ngay trên máy, không gửi dữ liệu ra ngoài.</p>
 <h2>Báo lỗi và thống kê</h2>
