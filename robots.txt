@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khanh181296.github.io/yumwell/sitemap.xml
